@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Survey Form</title>
+</head>
+<body>
+    <h1>Car Preference Survey</h1>
+    <form action="#" method="POST">
+        <!-- User First Name -->
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required><br><br>
+
+        <!-- User Last Name -->
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required><br><br>
+
+        <!-- Favorite Car (Select Input) -->
+        <label for="favorite-car">Favorite Car:</label>
+        <select id="favorite-car" name="favorite-car" required>
+            <option value="">Select your favorite car</option>
+            <option value="Tesla">Tesla</option>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="Ford">Ford</option>
+        </select><br><br>
+
+        <!-- Favorite Car Color (Radio Buttons) -->
+        <label>Favorite Car Color:</label><br>
+        <input type="radio" id="red" name="car-color" value="Red">
+        <label for="red">Red</label><br>
+        <input type="radio" id="blue" name="car-color" value="Blue">
+        <label for="blue">Blue</label><br>
+        <input type="radio" id="black" name="car-color" value="Black">
+        <label for="black">Black</label><br>
+        <input type="radio" id="white" name="car-color" value="White">
+        <label for="white">White</label><br><br>
+
+        <!-- Comments Section (Text Area) -->
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Survey</button>
+    </form>
+</body>
+</html>
